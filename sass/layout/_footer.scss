@@ -1,0 +1,89 @@
+.footer {
+  background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer-logo__back {
+  color: var(--logo-footer-back-color);
+}
+.footer__contacts {
+  margin-right: 70px;
+}
+.contacts__link {
+   @include font-config(400, 14px, 1.71, 0.03em, var(--body-fonts-onbackgraund-color));
+  font-style: normal;
+  &:hover,
+  &:focus {
+    color: var(--active-link-fonts-color);
+  }
+}
+.contacts__telmail-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts__item {
+  margin-bottom: 9px;
+}
+.footer-socials {
+  margin-right: 93px;
+}
+.footer-socials__title {
+  text-transform: uppercase;
+  @include font-config(700, 14px, calc(16 / 14), 0.03em, var(--body-fonts-onbackgraund-color));  
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+.footer-socials__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-socials__icon {
+  fill: var(--body-fonts-onbackgraund-color);
+}
+.footer-subscribing {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.footer-subscribing__label {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  @include font-config(700, 14px, calc(16 / 14), 0.03em, var(--body-fonts-onbackgraund-color));  
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+.footer-subscribing__box {
+  display: -webkit-box;
+    display: -ms-flexbox;
+      display: flex;
+}
+.footer-subscribing__input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding-left: 16px;
+  color: var(--body-fonts-onbackgraund-color);
+  margin-right: 12px;
+  outline: none;
+  &::-webkit-input-placeholder, &::-moz-placeholder,
+    &:-ms-input-placeholder,   &::-ms-input-placeholder,
+      &::placeholder {
+    @include font-config(400, 16px, calc(20 / 16), 0.03em, rgba(255, 255, 255, 0.6));
+    text-align: left;
+  }
+}

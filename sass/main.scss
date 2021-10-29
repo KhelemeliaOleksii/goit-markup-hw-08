@@ -1,0 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+@import './utils/variables';
+@import'./base/reset';
+@import './base/common';
+@import './components/mixins';
+@import './components/logo';
+@import './components/container';
+@import './components/button';
+@import './components/section';
+@import './components/social-links';
+@import './components/visually-hidden';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/service-form';
+@import './components/product-button';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/superiority';
+@import './layout/scills';
+@import './layout/team';
+@import './layout/regcustomers';
+@import './layout/footer';
+@import './layout/card-product';

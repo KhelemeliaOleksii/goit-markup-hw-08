@@ -1,0 +1,10 @@
+.section {
+  padding-top: var(--vertical-section-offset-positive);
+  padding-bottom: var(--vertical-section-offset-positive);
+}
+.section__title {
+  @include font-config(700, 36px, calc(42 / 36), 0.03em, var(--body-fonts-main-color));
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 20px;
+}

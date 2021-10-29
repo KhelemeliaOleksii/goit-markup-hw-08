@@ -1,0 +1,101 @@
+.header {
+  background-color: var(--header-background-color);
+  border-bottom: 1px solid var(--header-botton-color);
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-logo {
+  -webkit-box-flex: 0.6;
+      -ms-flex-positive: 0.6;
+          flex-grow: 0.6;
+}
+.header-logo__back {
+  color: var(--logo-header-back-color);
+}
+.header-navigation {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.header-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.header-navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-navigation__link {
+  @include font-config(500, 14px, calc(16 / 14), 0.02em, var(--body-fonts-main-color));  
+  &:hover,
+  &:focus {
+    color: var(--active-link-fonts-color);
+  }
+}
+.current-page__link {
+  position: relative;
+  color: var(--active-link-fonts-color);
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    border-bottom: 4px solid var(--active-link-fonts-color);
+    top: 44px;
+  }
+}
+.header-contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header-contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  @include font-config(500, 14px, calc(16 / 14), 0.02em, var(--general-text-fonts-color));  
+  &:hover,
+  &:focus {
+    color: var(--active-link-fonts-color);
+  }
+}
+.header-contact__icon {
+  margin-right: 10px;
+  .header-contact__link:hover &,
+  .header-contact__link:focus & {
+    --color1: var(--active-link-fonts-color);
+  }
+}

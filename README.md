@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-Homework #6 FullStackCourse GoIT
+# goit-markup-hw-06
+homework #6 Full Stack(HTML+CSS, GoIT)

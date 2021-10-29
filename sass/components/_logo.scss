@@ -1,0 +1,8 @@
+.logo {
+  font-family: Raleway;
+  @include font-config(700, 26px, calc(31 / 26), 0.03em, inherit);  
+}
+.logo__front {
+  color: var(--logo-first-color);
+}
+

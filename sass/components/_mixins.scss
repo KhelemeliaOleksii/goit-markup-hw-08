@@ -1,0 +1,7 @@
+@mixin font-config ($fw, $fs, $lh, $ls, $clr) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $clr;
+}

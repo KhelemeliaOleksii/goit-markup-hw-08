@@ -1,0 +1,131 @@
+
+.servise-form__title {
+  width: 100%;
+  @include font-config(700, 20px, calc(23 / 20), 0.03em,  var(--body-fonts-main-color));
+  margin-bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.servise-form__input:not(last-child) {
+  margin-bottom: 10px;
+}
+.input__label {
+  margin-bottom: 4px;
+  @include font-config(400, 12px, calc(14 / 12), 0.01em, var(--general-text-fonts-color));
+}
+.input__wrapper {
+  position: relative;
+  display: block;
+}
+.input__geometry {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  -webkit-transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    border-color: var(--active-link-fonts-color);
+  }
+}
+.input__data {
+  height: 40px;
+  padding-left: 42px;
+}
+.input__icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: var(--body-fonts-main-color);
+  -webkit-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  .input__geometry:focus + &,
+  .input__geometry:hover + & {
+    fill: var(--active-link-fonts-color);
+  }
+}
+
+.input__msg {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-bottom: 20px;
+  &::-moz-placeholder, &:-ms-input-placeholder, 
+    &::-ms-input-placeholder, &::placeholder,
+      &::-webkit-input-placeholder {
+    @include font-config(400, 12px, calc(14/12), 0.01em, rgba(117, 117, 117, 0.5) );
+    vertical-align: top;
+  }
+}
+.servise-form__checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 13px 30px 13px;
+}
+.checkbox__comment {
+  @include font-config(400, 14px, calc(18 / 14), 0.03em, var(--body-fonts-main-color));
+  text-align: left;
+  & a {
+    color: var(--active-link-fonts-color);
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+}
+.checkbox__input {
+  @include font-config(400, 14px, calc(18/14), 0.03em, var(--body-fonts-main-color));
+  text-align: left;
+}
+
+.custom-checkbox {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0px;
+  top: 0px;
+  background-color: var(--cards-background-color);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  -webkit-transition: background-color var(--animation-time)
+      cubic-bezier(0.4, 0, 0.2, 1),
+    border-width var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color var(--animation-time)
+      cubic-bezier(0.4, 0, 0.2, 1),
+    border-width var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation-time)
+      cubic-bezier(0.4, 0, 0.2, 1),
+    border-width var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  .checkbox__input:checked + .checkbox__comment & {
+    background-color: var(--active-btn-background-color);
+    border-width: 0;
+  }
+}
+.custom-checkbox__icon {
+  width: 13px;
+  height: 20px;
+  fill: var(--body-fonts-onbackgraund-color);
+}

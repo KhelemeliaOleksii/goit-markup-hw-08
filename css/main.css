@@ -390,8 +390,11 @@ body {
   color: var(--general-text-fonts-color);
 }
 
-.input__label:focus, .input__label:hover {
-  color: var(--active-link-fonts-color);
+@media screen and (max-width: 767px) {
+  .servise-form__input:focus .input__label,
+  .servise-form__input:hover .input__label {
+    color: var(--active-link-fonts-color);
+  }
 }
 
 .input__wrapper {

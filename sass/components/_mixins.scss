@@ -5,3 +5,31 @@
     letter-spacing: $ls;
     color: $clr;
 }
+@mixin flex-display($wrp: nowrap, $jc: flex-start, $ai:flex-start) {
+  display: -webkit-box;
+    display: -ms-flexbox;
+      display: flex;
+  -ms-flex-wrap: $wrp;
+    flex-wrap: $wrp;
+  -webkit-box-pack: $jc;
+    -ms-flex-pack: $jc;
+      justify-content: $jc;
+  -webkit-box-align: $ai;
+      -ms-flex-align: $ai;
+          align-items: $ai;
+}
+
+@mixin flex-basis($v: 4) {
+   -ms-flex-preferred-size: calc(100% / #{$v} - var(--horisondal-content-offset-positive));
+      flex-basis: calc(100% / #{$v} - var(--horisondal-content-offset-positive));
+}
+@mixin box-shadow($v1, $v2, $v3, $v4, $v5) {
+  webkit-box-shadow: $v1 $v2 $v3 $v4 $v5;
+    box-shadow: $v1 $v2 $v3 $v4 $v5;
+}
+@mixin transition($what, $atime, $func) {
+  -webkit-transition: $what $atime $func;
+  -o-transition: $what $atime $func;
+  transition: $what $atime $func;
+
+}

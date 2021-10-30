@@ -1,19 +1,17 @@
 .scills-section {
+  @media screen and (max-width:1200px) {
+    @include visually-hidden();    
+  }
   padding-top: 0;
 }
 .scills-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  @include flex-display(wrap);
   margin-left: var(--horisondal-content-offset-negative);
 }
 .scills-list__item {
   margin-top: var(--vertical-content-offset-positive);
   margin-left: var(--horisondal-content-offset-positive);
-  -ms-flex-preferred-size: calc(100% / 3 - var(--horisondal-content-offset-positive));
-      flex-basis: calc(100% / 3 - var(--horisondal-content-offset-positive));
+  @include flex-basis(3);
 }
 .scills-list__link > img {
   -o-object-fit: cover;

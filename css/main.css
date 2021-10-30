@@ -237,17 +237,6 @@ body {
   fill: var(--body-fonts-onbackgraund-color);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 .backdrop {
   position: fixed;
   display: -webkit-box;
@@ -492,10 +481,33 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-buttom__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.product-buttom__item {
+  margin-bottom: 15px;
 }
 
 .product-buttom__item:not(:last-child) {
@@ -658,24 +670,65 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: center;
-  background-size: 1600px, 1600px;
+  background-size: cover, cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-size: cover, cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-size: 1600px, 1600px;
+  }
 }
 
 .hero-container {
-  padding-bottom: 106px;
-  padding-top: 106px;
+  padding-bottom: 58px;
+  padding-top: 58px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-bottom: 106px;
+    padding-top: 106px;
+  }
 }
 
 .hero-section__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.38;
   letter-spacing: 0.06em;
   color: var(--body-fonts-onbackgraund-color);
+  max-width: 360px;
   text-align: center;
   text-transform: uppercase;
-  max-width: 696px;
   margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--body-fonts-onbackgraund-color);
+    max-width: 696px;
+  }
+}
+
+.superiority-section__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 @media screen and (min-width: 768px) {
@@ -767,12 +820,31 @@ body {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .scills-section {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+}
+
 .scills-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   margin-left: var(--horisondal-content-offset-negative);
 }
 
@@ -1084,21 +1156,46 @@ body {
 }
 
 .products__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: var(--horisondal-content-offset-negative);
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    margin-left: var(--horisondal-content-offset-negative);
+  }
 }
 
 .products__item {
   background-color: var(--cards-background-color);
-  margin-left: var(--horisondal-content-offset-positive);
   margin-top: var(--vertical-content-offset-positive);
   border-bottom: 1px solid var(--product-example-card-border);
-  -ms-flex-preferred-size: calc(100% / 3 - var(--horisondal-content-offset-positive));
-  flex-basis: calc(100% / 3 - var(--horisondal-content-offset-positive));
+}
+
+@media screen and (min-width: 768px) {
+  .products__item {
+    -ms-flex-preferred-size: calc(100% / 2 - var(--horisondal-content-offset-positive));
+    flex-basis: calc(100% / 2 - var(--horisondal-content-offset-positive));
+    margin-left: var(--horisondal-content-offset-positive);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__item {
+    -ms-flex-preferred-size: calc(100% / 3 - var(--horisondal-content-offset-positive));
+    flex-basis: calc(100% / 3 - var(--horisondal-content-offset-positive));
+    margin-left: var(--horisondal-content-offset-positive);
+  }
 }
 
 .products__link {
@@ -1115,6 +1212,10 @@ body {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
+.products_image {
+  width: 100%;
+}
+
 .products__content {
   position: relative;
   overflow: hidden;
@@ -1122,20 +1223,22 @@ body {
 
 .products__description {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   padding: 24px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   overflow: auto;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(33, 150, 243, 0.9)), to(rgba(33, 150, 243, 0.9)));
   background-image: -o-linear-gradient(right, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));

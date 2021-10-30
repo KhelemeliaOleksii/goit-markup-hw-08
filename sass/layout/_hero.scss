@@ -18,16 +18,30 @@
     url(../images/bg-hero.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: center;
-  background-size: 1600px, 1600px;
+  background-size: cover, cover;
+  @media screen and (min-width: 768px) {
+    background-size: cover, cover;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 1600px, 1600px;  
+  }
 }
 .hero-container {
-  padding-bottom: 106px;
-  padding-top: 106px;
+  padding-bottom: 58px;
+  padding-top: 58px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 106px;
+    padding-top: 106px;
+  }
 }
 .hero-section__title {
-  @include font-config(900, 44px, 1.36, 0.06em, var(--body-fonts-onbackgraund-color));  
+  @include font-config(900, 26px, 1.38, 0.06em, var(--body-fonts-onbackgraund-color));  
+  max-width: 360px;
+  @media screen and (min-width: 1200px) {
+    @include font-config(900, 44px, 1.36, 0.06em, var(--body-fonts-onbackgraund-color));  
+    max-width: 696px;
+  }
   text-align: center;
   text-transform: uppercase;
-  max-width: 696px;
   margin: 0 auto 30px;
 }

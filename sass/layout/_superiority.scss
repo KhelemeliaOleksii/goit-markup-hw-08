@@ -1,3 +1,7 @@
+.superiority-section__title {
+  @include visually-hidden();
+}
+
 .superiority-set__list {
   @media screen and (min-width: 768px) {
     @include flex-display(wrap);

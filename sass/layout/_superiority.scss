@@ -3,17 +3,16 @@
 }
 
 .superiority-set__list {
+  margin-left: var(--horisondal-content-offset-negative);
+  margin-top: var(--vertical-content-offset-negative);
   @media screen and (min-width: 768px) {
-    @include flex-display(wrap);
-    margin-left: var(--horisondal-content-offset-negative);
-    margin-top: var(--vertical-content-offset-negative);
-      
+    @include flex-display(wrap);    
   }
 }
 .superiority-set__item {
   margin-top: var(--horisondal-content-offset-positive);
+  margin-left: var(--horisondal-content-offset-positive);
   @media screen and (min-width: 768px) {
-    margin-left: var(--horisondal-content-offset-positive);
     @include flex-basis(2);
   }
   @media screen and (min-width: 1200px) {

@@ -18,6 +18,15 @@
 .input__label {
   margin-bottom: 4px;
   @include font-config(400, 12px, calc(14 / 12), 0.01em, var(--general-text-fonts-color));
+  &:focus,
+  &:hover {
+    color: var(--active-link-fonts-color);
+  }
+  // .input__geometry:focus  &,
+  // .input__geometry:hover  & {
+  //   color: var(--active-link-fonts-color);
+  // }
+
 }
 .input__wrapper {
   position: relative;
@@ -103,6 +112,7 @@
   @include font-config(400, 12px, calc(14 / 12), 0.03em, var(--body-fonts-main-color));
   @media screen and (min-width: 1200px) {
     @include font-config(400, 14px, calc(18/14), 0.03em, var(--body-fonts-main-color));
+    margin-right: 0;
   }
   text-align: left;
 }

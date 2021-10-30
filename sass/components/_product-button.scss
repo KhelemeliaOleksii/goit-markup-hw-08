@@ -54,3 +54,11 @@
              0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
   }
 }
+.button--selected {
+  color: var(--active-btn-fonts-color);
+  background-color: var(--active-btn-background-color);
+  -webkit-box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
+         0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
+           0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
+}

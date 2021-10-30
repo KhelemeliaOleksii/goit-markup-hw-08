@@ -15,5 +15,7 @@
   @include font-config(700, 36px, calc(42 / 36), 0.03em, var(--body-fonts-main-color));
   text-align: center;
   vertical-align: top;
-  margin-bottom: 20px;
+  @media screen and (min-width:1200px) {
+    margin-bottom: 20px;    
+  }
 }

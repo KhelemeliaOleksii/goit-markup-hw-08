@@ -1,6 +1,10 @@
 .logo {
   font-family: Raleway;
-  @include font-config(700, 26px, calc(31 / 26), 0.03em, inherit);  
+  @include font-config(700, 24px, calc(28 / 24), 0.03em, inherit);  
+  @media screen and (min-width:1200px) {
+    @include font-config(700, 26px, calc(31 / 26), 0.03em, inherit);  
+  }
+
 }
 .logo__front {
   color: var(--logo-first-color);

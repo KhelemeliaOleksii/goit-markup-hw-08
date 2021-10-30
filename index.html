@@ -22,45 +22,59 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <div class="header-logo">
                 <a href="#" class="link link-no-tdn logo">
                     <span class="logo__front">Web</span><span class="header-logo__back">Studio</span>
                 </a>
             </div>
-            <nav class="header-navigation">
-                <ul class="list list-no-ls header-navigation__list">
-                    <li class="header-navigation__item item">
-                        <a href="./index.html"
-                            class="lin-k link-no-tdn header-navigation__link current-page__link">Студия</a>
-                    </li>
-                    <li class="header-navigation__item item">
-                        <a href="./portfolio.html" class="link link-no-tdn header-navigation__link">Портфолио</a>
-                    </li>
-                    <li class="header-navigation__item item">
-                        <a href="#" class="link link-no-tdn header-navigation__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="list list-no-ls header-contact__list">
-                <li class="header-contact__item item mail-item">
-                    <a href="mailto:info@devstudio.com" class="link link-no-tdn header-contact__link">
-                        <svg width="16" height="12" class="header-contact__icon">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        <span class="mail-header">info@devstudio.com</span></a>
-                </li>
-                <li class="header-contact__item">
-                    <a href="tel:+380961111111" class="link link-no-tdn header-contact__link">
-                        <svg width="10" height="16" class="header-contact__icon">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        <span>+38 096 111 11 11</span></a>
-                </li>
-            </ul>
+            <div class="menu__button-wrapper">
+                <button class="menu_button" data-menu-open>
+                    <svg class="menu__icon">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header-content__wrapper">
+                <div class="header-nav__container">
+                    <nav class="header-navigation">
+                        <ul class="list list-no-ls header-navigation__list">
+                            <li class="header-navigation__item item">
+                                <a href="./index.html"
+                                    class="lin-k link-no-tdn header-navigation__link current-page__link">Студия</a>
+                            </li>
+                            <li class="header-navigation__item item">
+                                <a href="./portfolio.html"
+                                    class="link link-no-tdn header-navigation__link">Портфолио</a>
+                            </li>
+                            <li class="header-navigation__item item">
+                                <a href="#" class="link link-no-tdn header-navigation__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-contacts__container">
+                    <ul class="list list-no-ls header-contact__list">
+                        <li class="header-contact__item item mail-item">
+                            <a href="mailto:info@devstudio.com" class="link link-no-tdn header-contact__link">
+                                <svg width="16" height="12" class="header-contact__icon">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                <span class="mail-header">info@devstudio.com</span></a>
+                        </li>
+                        <li class="header-contact__item">
+                            <a href="tel:+380961111111" class="link link-no-tdn header-contact__link">
+                                <svg width="10" height="16" class="header-contact__icon">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                <span>+38 096 111 11 11</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </header> -->
+    </header>
     <main>
         <section class="hero-section section">
             <div class="container hero-container">
@@ -167,8 +181,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team-member__list list-no-ls">
                     <li class="team-member__items item">
-                        <img src="./images/productdesigner.jpg" alt="Product Designer" 
-                                class="team-member_photo"  />
+                        <img src="./images/productdesigner.jpg" alt="Product Designer" class="team-member_photo" />
                         <div class="team-member__caption">
                             <h3 class="team-member__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team-member__positions">Product Designer</p>
@@ -205,8 +218,7 @@
                         </div>
                     </li>
                     <li class="team-member__items item">
-                        <img src="./images/frontend.jpg" alt="Frontend Developer"
-                                class="team-member_photo"  />
+                        <img src="./images/frontend.jpg" alt="Frontend Developer" class="team-member_photo" />
                         <div class="team-member__caption">
                             <h3 class="team-member__name">Ольга Репина</h3>
                             <p lang="en" class="team-member__positions">
@@ -245,8 +257,7 @@
                         </div>
                     </li>
                     <li class="team-member__items item">
-                        <img src="./images/marketing.jpg" alt="Marketing"
-                                class="team-member_photo"  />
+                        <img src="./images/marketing.jpg" alt="Marketing" class="team-member_photo" />
                         <div class="team-member__caption">
                             <h3 class="team-member__name">Николай Тарасов</h3>
                             <p lang="en" class="team-member__positions">Marketing</p>
@@ -283,8 +294,7 @@
                         </div>
                     </li>
                     <li class="team-member__items item">
-                        <img src="./images/uidesigner.jpg" alt="UI Designer" 
-                                class="team-member_photo"  />
+                        <img src="./images/uidesigner.jpg" alt="UI Designer" class="team-member_photo" />
                         <div class="team-member__caption">
                             <h3 class="team-member__name">Михаил Ермаков</h3>
                             <p lang="en" class="team-member__positions">UI Designer</p>
@@ -373,9 +383,9 @@
             </div>
         </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__contacts">
+            <div class="footer__contacts footer__element">
                 <div class="footer-logo">
                     <a href="#" class="link link-no-tdn logo">
                         <span class="logo__front">Web</span><span class="footer-logo__back">Studio</span>
@@ -391,43 +401,39 @@
                                 class="contacts__link link contacts__telmail-link link-no-tdn">info@example.com</a>
                         </li>
                         <li class="address__item item">
-                            <a href="tel:+380991111111" 
+                            <a href="tel:+380991111111"
                                 class="contacts__link link contacts__telmail-link link-no-tdn">+38
                                 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-socials">
+            <div class="footer-socials footer__element">
                 <p class="footer-socials__title">присоединяйтесь</p>
                 <ul class="footer-socials__list socials__list list-no-ls list">
                     <li class="footer-socials__item socials__item item ">
-                        <a href="javascript:void(0)"
-                            class="footer-socials__link socials__link link-no-tdn link">
+                        <a href="javascript:void(0)" class="footer-socials__link socials__link link-no-tdn link">
                             <svg class="footer-socials__icon socials__icon ">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-socials__item socials__item item ">
-                        <a href="javascript:void(0)"
-                            class="footer-socials__link socials__link link-no-tdn link">
+                        <a href="javascript:void(0)" class="footer-socials__link socials__link link-no-tdn link">
                             <svg class="footer-socials__icon socials__icon ">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-socials__item socials__item item ">
-                        <a href="javascript:void(0)"
-                            class="footer-socials__link socials__link link-no-tdn link">
+                        <a href="javascript:void(0)" class="footer-socials__link socials__link link-no-tdn link">
                             <svg class="footer-socials__icon socials__icon ">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-socials__item socials__item item ">
-                        <a href="javascript:void(0)"
-                            class="footer-socials__link socials__link link-no-tdn link">
+                        <a href="javascript:void(0)" class="footer-socials__link socials__link link-no-tdn link">
                             <svg class="footer-socials__icon socials__icon ">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
@@ -435,26 +441,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-subscribing">
+            <div class="footer-subscribing footer__element">
                 <form class="footer-subscribing__form" action="javascript:void(0)">
-                    <label for="footer-subscribing__input" class="footer-subscribing__label">Подпишитесь на
+                    <label for="footer-subscribing__input" class="footer-subscribing__label ">Подпишитесь на
                         рассылку</label>
                     <div class="footer-subscribing__box">
-                        <input type="email" id="footer-subscribing__input" 
-                                name="subscribing-email" placeholder="E-mail" 
-                                class="footer-subscribing__input">
-                        
-                            <button type="submit" class="button-submit"> Подписаться
-                                <svg class="button-submit__icon">
-                                    <use href="./images/icons.svg#icon-send"></use>
-                                </svg>
-                            </button>
-                        
+                        <input type="email" id="footer-subscribing__input" name="subscribing-email" placeholder="E-mail"
+                            class="footer-subscribing__input">
+
+                        <button type="submit" class="button-submit footer__button"> Подписаться
+                            <svg class="button-submit__icon">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+
                     </div>
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close-btn" data-modal-close>
@@ -469,8 +474,7 @@
                 <div class="servise-form__input">
                     <label for="name-input" class="input__label">Имя</label>
                     <span class="input__wrapper">
-                        <input type="text" id="name-input" name="name" 
-                            class="input__data input__geometry">
+                        <input type="text" id="name-input" name="name" class="input__data input__geometry">
                         <svg class="input__icon">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
@@ -479,8 +483,7 @@
                 <div class="servise-form__input">
                     <label for="tel-input" class="input__label"><span>Телефон</span></label>
                     <span class="input__wrapper">
-                        <input type="tel" id="tel-input" name="tel-input" 
-                            class="input__data input__geometry">
+                        <input type="tel" id="tel-input" name="tel-input" class="input__data input__geometry">
                         <svg class="input__icon">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -489,8 +492,7 @@
                 <div class="servise-form__input">
                     <label for="email-input" class="input__label">Почта</label>
                     <span class="input__wrapper">
-                        <input type="email" id="email-input" name="email-input" 
-                            class="input__data input__geometry">
+                        <input type="email" id="email-input" name="email-input" class="input__data input__geometry">
                         <svg class="input__icon">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
@@ -498,15 +500,13 @@
                 </div>
                 <div class="servise-form__input">
                     <label for="textarea-input" class="input__label">Комментарий</label>
-                    <textarea name="message" id="textarea-input" 
-                        class="input__msg input__geometry"
+                    <textarea name="message" id="textarea-input" class="input__msg input__geometry"
                         placeholder="Введите текст"></textarea>
 
                 </div>
-                
+
                 <div class="servise-form__checkbox">
-                    <input type="checkbox" id="conditions-checkbox" name="conditions-checkbox" 
-                        class="checkbox__input">
+                    <input type="checkbox" id="conditions-checkbox" name="conditions-checkbox" class="checkbox__input">
                     <label for="conditions-checkbox" class="checkbox__comment">
                         <span class="custom-checkbox">
                             <svg class="custom-checkbox__icon">
@@ -526,7 +526,79 @@
             </form>
         </div>
     </div>
+    <div class="backdrop is-hidden" data-menu>
+        <div class="mobile-menu__container">
+            <div class="mobile-menu">
+                <div class="mobile-menu__button-wrapper">
+                    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                        <svg class="mobile-menu__close-icon">
+                            <use href="./images/icons.svg#icon-close-btn"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile-menu__wrapper">
+                    <nav class="mobile-menu__navigation-wrapper">
+                        <ul class="mobile-menu__nav-list list-no-ls list">
+                            <li class="mobile-menu__nav-item item">
+                                <a href="#"
+                                    class="mobile-menu__nav-link mobile-menu__current-link link-no-tdn link ">Студия</a>
+                            </li>
+                            <li class="mobile-menu__nav-item item">
+                                <a href="./portfolio.html" class="mobile-menu__nav-link link-no-tdn link">Портфолио</a>
+                            </li>
+                            <li class="mobile-menu__nav-item item">
+                                <a href="#mobile-menu__contacts"
+                                    class="mobile-menu__nav-link link-no-tdn link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-menu__contacts-container">
+                        <div id="mobile-menu__contacts" class="mobile-menu__contacts">
+                            <ul class="mobile_menu__contact-list list-no-ls list">
+                                <li class="mobile-menu__contact-items">
+                                    <a href="tel:+380961111111" class="mobile-menu__contact-link link-no-tdn link">
+                                        <span class="mobile-menu__mobile">+38 096 111 11 11</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__contact-items">
+                                    <a href="mailto:info@devstudio.com"
+                                        class="mobile-menu__contact-link link-no-tdn link">
+                                        <span class="mobile-menu__post">info@devstudio.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-menu__socials">
+                            <ul class="mobile-menu__social-list list-no-ls list">
+                                <li class="mobile-menu__social-item">
+                                    <a href="#" class="mobile-menu__social-link link-no-tdn link">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__social-item">
+                                    <a href="#" class="mobile-menu__social-link link-no-tdn link">
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__social-item">
+                                    <a href="#" class="mobile-menu__social-link link-no-tdn link">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="mobile-menu__social-item">
+                                    <a href="#" class="mobile-menu__social-link link-no-tdn link">
+                                        LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

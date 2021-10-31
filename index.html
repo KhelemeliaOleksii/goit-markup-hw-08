@@ -77,11 +77,11 @@
             <div class="mobile-menu__container">
                 <div class="mobile-menu">
                     <!-- <div class="mobile-menu__button-wrapper"> -->
-                        <button type="button" class="mobile-menu__close-btn" data-menu-close>
-                            <svg class="mobile-menu__close-icon">
-                                <use href="./images/icons.svg#icon-menu__close-btn"></use>
-                            </svg>
-                        </button>
+                    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                        <svg class="mobile-menu__close-icon">
+                            <use href="./images/icons.svg#icon-menu__close-btn"></use>
+                        </svg>
+                    </button>
                     <!-- </div> -->
                     <div class="mobile-menu__wrapper">
                         <nav class="mobile-menu__navigation-wrapper">
@@ -91,7 +91,8 @@
                                         class="mobile-menu__nav-link mobile-menu__current-link link-no-tdn link ">Студия</a>
                                 </li>
                                 <li class="mobile-menu__nav-item item">
-                                    <a href="./portfolio.html" class="mobile-menu__nav-link link-no-tdn link">Портфолио</a>
+                                    <a href="./portfolio.html"
+                                        class="mobile-menu__nav-link link-no-tdn link">Портфолио</a>
                                 </li>
                                 <li class="mobile-menu__nav-item item">
                                     <a href="#mobile-menu__contacts"
@@ -143,7 +144,7 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </header>
     <main>
         <section class="hero-section section">
@@ -218,8 +219,13 @@
                     <li class="scills-list__item item">
                         <div class="scills-list__content">
                             <a href="" class="scills-list__link link-no-tdn link">
-                                <img src="./images/desktop-app.jpg" alt="Разработка десктопных приложений" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                        srcset="./images/studio/desktop-app-desktop.jpg 1x, ./images/studio/desktop-app-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <img src="./images/studio/desktop-app-desktop.jpg"
+                                        alt="Разработка десктопных приложений" width="370" />
+                                </picture>
                             </a>
                             <p class="scills-list__overlay">Десктопные приложения</p>
                         </div>
@@ -227,18 +233,27 @@
                     <li class="scills-list__item item">
                         <div class="scills-list__content">
                             <a href="" class="scills-list__link link-no-tdn link">
-                                <img src="./images/smartphone-app.jpg" alt="Разработка мобильных приложений" width="370"
-                                    height="294" />
-                            </a>
-                            <p class="scills-list__overlay">Мобильные приложения</p>
+                                <picture>
+                                    <source
+                                        srcset="./images/studio/mobile-app-desktop.jpg 1x, ./images/studio/mobile-app-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <img src="./images/studio/mobile-app-desktop.jpg"
+                                        alt="Разработка мобильных приложений" width="370" />
+                                </picture>
+                                <p class="scills-list__overlay">Мобильные приложения</p>
                         </div>
                     </li>
 
                     <li class="scills-list__item item">
                         <div class="scills-list__content">
                             <a href="" class="scills-list__link link-no-tdn link">
-                                <img src="./images/design.jpg" alt="Смелые дизайнерские решения" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                        srcset="./images/studio/design-solution-desktop.jpg 1x, ./images/studio/design-solution-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <img src="./images/studio/design-solution-desktop.jpg"
+                                        alt="Смелые дизайнерские решения" width="370" />
+                                </picture>
                             </a>
                             <p class="scills-list__overlay">Дизайнерские решения</p>
                         </div>
@@ -250,23 +265,20 @@
             <div class="container team-container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team-member__list list-no-ls">
-                    <!-- <picture>
-                
-
-                        <source srcset="./images/team/desktop/team-4-desktop.jpg 1x, ./images/team/desktop/team-4-desktop@2x.jpg 2x" media="(min-width:1200px)">
-                        
-        
-                        <source srcset="./images/team/tablet/team-4-tablet.jpg 1x, ./images/team/tablet/team-4-tablet@2x.jpg 2x" media="(min-width:768px)">
-                        
-        
-        <source srcset="./images/team/mobile/team-4-mobile.jpg 1x, ./images/team/mobile/team-4-mobile@2x.jpg 2x" media="(min-width:320px)">              
-                      
-        <img class="team-list__img" src="./images/team/team-4-mobile.jpg" alt="Фото Михаил Ермаков" aria-label="Михаил Ермаков">
-                      
-        </picture>
-         -->
                     <li class="team-member__items item">
-                        <img src="./images/productdesigner.jpg" alt="Product Designer" class="team-member_photo" />
+                        <picture>
+                            <source
+                                srcset="./images/studio/product-designer-desktop.jpg 1x, ./images/studio/product-designer-desktop@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./images/studio/product-designer-tablet.jpg 1x, ./images/studio/product-designer-tablet@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images/studio/product-designer-mobile.jpg 1x, ./images/studio/product-designer-mobile@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img src="./images/studio/product-designer-mobile.jpg" alt="Product Designer"
+                                class="team-member_photo" />
+                        </picture>
                         <div class="team-member__caption">
                             <h3 class="team-member__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team-member__positions">Product Designer</p>
@@ -303,7 +315,19 @@
                         </div>
                     </li>
                     <li class="team-member__items item">
-                        <img src="./images/frontend.jpg" alt="Frontend Developer" class="team-member_photo" />
+                        <picture>
+                            <source
+                                srcset="./images/studio/frontend-developer-desktop.jpg 1x, ./images/studio/frontend-developer-desktop@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./images/studio/frontend-developer-tablet.jpg 1x, ./images/studio/frontend-developer-tablet@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images/studio/frontend-developer-mobile.jpg 1x, ./images/studio/frontend-developer-mobile@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img src="./images/studio/frontend-developer-mobile.jpg" alt="Frontend Developer"
+                                class="team-member_photo" />
+                        </picture>
                         <div class="team-member__caption">
                             <h3 class="team-member__name">Ольга Репина</h3>
                             <p lang="en" class="team-member__positions">
@@ -342,7 +366,18 @@
                         </div>
                     </li>
                     <li class="team-member__items item">
-                        <img src="./images/marketing.jpg" alt="Marketing" class="team-member_photo" />
+                        <picture>
+                            <source
+                                srcset="./images/studio/marketing-desktop.jpg 1x, ./images/studio/marketing-desktop@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./images/studio/marketing-tablet.jpg 1x, ./images/studio/marketing-tablet@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images/studio/marketing-mobile.jpg 1x, ./images/studio/marketing-mobile@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img src="./images/studio/marketing-mobile.jpg" alt="Marketing" class="team-member_photo" />
+                        </picture>
                         <div class="team-member__caption">
                             <h3 class="team-member__name">Николай Тарасов</h3>
                             <p lang="en" class="team-member__positions">Marketing</p>
@@ -379,7 +414,19 @@
                         </div>
                     </li>
                     <li class="team-member__items item">
-                        <img src="./images/uidesigner.jpg" alt="UI Designer" class="team-member_photo" />
+                        <picture>
+                            <source
+                                srcset="./images/studio/ui-designer-desktop.jpg 1x, ./images/studio/ui-designer-desktop@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./images/studio/ui-designer-tablet.jpg 1x, ./images/studio/ui-designer-tablet@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./images/studio/ui-designer-mobile.jpg 1x, ./images/studio/ui-designer-mobile@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img src="./images/studio/ui-designer-mobile.jpg" alt="UI Designer"
+                                class="team-member_photo" />
+                        </picture>
                         <div class="team-member__caption">
                             <h3 class="team-member__name">Михаил Ермаков</h3>
                             <p lang="en" class="team-member__positions">UI Designer</p>

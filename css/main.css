@@ -1074,10 +1074,16 @@ body {
 .hero-section {
   background-repeat: no-repeat, no-repeat;
   background-position: center;
-  background-size: 480px, 480px;
+  background-size: cover, cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero-bg-mobile.jpg);
   background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-bg-mobile.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-bg-mobile.jpg);
+}
+
+@media screen and (min-width: 480px) {
+  .hero-section {
+    background-size: 480px, 480px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2 / 1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1571,16 +1577,20 @@ body {
   }
 }
 
+.footer-socials {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer-socials {
     margin-top: 5px;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-socials {
     margin-top: 12px;
-    margin-bottom: 0;
   }
 }
 

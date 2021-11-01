@@ -1,8 +1,10 @@
 .hero-section {
   background-repeat: no-repeat, no-repeat;
   background-position: center;
-//  background-size: cover, cover;
-  background-size: 480px, 480px;
+  background-size: cover, cover;
+@media screen and (min-width:480px) {
+  background-size: 480px, 480px;  
+}
 
   background-image: -webkit-gradient(
       linear,

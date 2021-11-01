@@ -66,12 +66,14 @@
   }
 }
 .footer-socials {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-top: 5px;
+    margin-bottom: 0;
   }
   @media screen and (min-width:1200px) {
     margin-top: 12px;
-    margin-bottom: 0;
+
   }
 }
 .footer-socials__title {

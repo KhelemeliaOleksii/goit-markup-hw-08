@@ -1,21 +1,17 @@
-// .section {
-//   padding-top: var(--vertical-section-offset-positive);
-//   padding-bottom: var(--vertical-section-offset-positive);
-// }
 .section {
   padding-top: var(--mobile-vertical-section-offset);
   padding-bottom: var(--mobile-vertical-section-offset);
-  
   @media screen and (min-width: 1200px) {
     padding-top: var(--vertical-section-offset-positive);
     padding-bottom: var(--vertical-section-offset-positive); 
   }
 }
 .section__title {
-  @include font-config(700, 36px, calc(42 / 36), 0.03em, var(--body-fonts-main-color));
+  @include font-config(700, 28px, calc(33 / 28), 0.03em, var(--body-fonts-main-color));
   text-align: center;
   vertical-align: top;
   @media screen and (min-width:1200px) {
     margin-bottom: 20px;    
+    @include font-config(700, 36px, calc(42 / 36), 0.03em, var(--body-fonts-main-color));
   }
 }

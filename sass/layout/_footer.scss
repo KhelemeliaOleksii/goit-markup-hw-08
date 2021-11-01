@@ -27,6 +27,7 @@
 }
 .footer-logo {
   margin-bottom: 20px;
+  vertical-align: top;
 }
 .footer-logo__back {
   color: var(--logo-footer-back-color);
@@ -40,10 +41,11 @@
   @include font-config(
     400,
     14px,
-    1.71,
+    calc(24 / 14),
     0.03em,
     var(--body-fonts-onbackgraund-color)
   );
+  vertical-align: top;
   font-style: normal;
   &:hover,
   &:focus {
@@ -64,7 +66,6 @@
   }
 }
 .footer-socials {
-  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-top: 5px;
   }
@@ -148,6 +149,7 @@
       rgba(255, 255, 255, 0.6)
     );
     text-align: left;
+    vertical-align: center;
   }
 }
 .footer__button {

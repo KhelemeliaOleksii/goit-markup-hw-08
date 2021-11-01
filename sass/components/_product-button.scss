@@ -22,7 +22,7 @@
 
 .product-buttom__config {
   cursor: pointer;
-  @include font-config(500, 16px, 1.62, 0.03em, var(--body-fonts-main-color));
+  @include font-config(500, 16px, calc(26 / 16), 0.03em, var(--body-fonts-main-color));
   text-align: center;
   border: 0;
   border-radius: 4px;

@@ -11,7 +11,8 @@
   background-color: var(--cards-background-color);
   margin-top: var(--vertical-content-offset-positive);
   border-bottom: 1px solid var(--product-example-card-border);
-  //height: 100%;
+  border-left: 1px solid var(--product-example-card-border);
+  border-right: 1px solid var(--product-example-card-border);
   @media screen and (min-width: 768px) {
     @include flex-basis(2);
     margin-left: var(--horisondal-content-offset-positive);

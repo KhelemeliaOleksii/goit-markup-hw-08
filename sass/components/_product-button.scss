@@ -6,11 +6,15 @@
 }
 .product-buttom__list {
   @include flex-display(wrap);
+  margin-top: -15px;
+  margin-bottom: 10px;
   @media screen and (min-width:768px) {
     @include flex-display(wrap, center, center);
+    margin-bottom: 0;
   }
-  margin-top: -15px;
-  //margin-bottom: 10px;
+  @media screen and (min-width:1200px) {
+    margin-bottom: 20px;
+  }
 }
 
 .product-buttom__item {

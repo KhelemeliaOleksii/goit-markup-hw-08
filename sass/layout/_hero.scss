@@ -2,10 +2,6 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover, cover;
-@media screen and (min-width:480px) {
-  background-size: 480px, 480px;  
-}
-
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -49,8 +45,6 @@
       url(../images/studio/hero-bg-mobile@2x.jpg);
   }
     @media screen and (min-width: 768px) {
-    background-size: 768px, 768px;
-
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -99,7 +93,6 @@
     background-repeat: no-repeat, no-repeat;
     background-position: center;
     background-size: cover, cover;
-    background-size: 1600px, 1600px;
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -147,8 +140,8 @@
 .hero-container {
   padding-bottom: 118px;
   padding-top: 118px;
-  margin-top: -60px;
-  margin-bottom: -60px;
+  // margin-top: -60px;
+  // margin-bottom: -60px;
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover, cover;

@@ -1,10 +1,5 @@
 .socials__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  @include flex-display(nowrap, center);
 }
 .socials__item {
   height: 44px;
@@ -16,16 +11,8 @@
 .socials__link {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  @include flex-display(nowrap, center, center);
   -webkit-transition: background-color var(--animation-time)
     cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: background-color var(--animation-time)

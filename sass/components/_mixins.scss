@@ -1,23 +1,72 @@
-@mixin box-shadow($v1, $v2, $v3, $v4, $v5) {
-  webkit-box-shadow: $v1 $v2 $v3 $v4 $v5;
-    box-shadow: $v1 $v2 $v3 $v4 $v5;
+
+@mixin box-shadow($shadow1, $shadow2:false, $shadow3:false, $shadow4:false, $shadow5:false) {
+ $params: $shadow1;
+  @if $shadow2 
+    { $params: $shadow1, $shadow2; }
+    @if $shadow3 != false
+      { $params: $shadow1, $shadow2, $shadow3; }
+      @if $shadow4 != false
+        { $params: $shadow1, $shadow2, $shadow3, $shadow4; }
+        @if $shadow5 != false
+          { $params: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5; }
+
+  -webkit-box-shadow: $params;
+     -moz-box-shadow: $params;
+          box-shadow: $params;
+
 }
 @mixin flex-basis($v: 4) {
   -ms-flex-preferred-size: calc(100% / #{$v} - var(--horisondal-content-offset-positive));
      flex-basis: calc(100% / #{$v} - var(--horisondal-content-offset-positive));
 }
+@mixin justify-content ($jc) {
+  @if  $jc == 'flex-start' {
+    -webkit-box-pack: start;
+     -ms-flex-pack: start;
+      justify-content: $jc;    
+  } @else if $jc == 'flex-end' {
+    -webkit-box-pack: end;
+     -ms-flex-pack: end;
+      justify-content: $jc;    
+  } @else if $jc == 'space-between' {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: $jc;
+  } @else if $jc == 'space-around' {
+    -ms-flex-pack: distribute;
+    justify-content: $jc;
+  } @else {
+    -webkit-box-pack: $jc;
+     -ms-flex-pack: $jc;
+      justify-content: $jc;
+  }
+}
+@mixin align-items ($ai) {
+  @if  $ai == 'flex-start' {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    } @else if $ai == 'flex-end' {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+    } @else {
+      -webkit-box-align: $ai;
+      -ms-flex-align: $ai;
+      align-items: $ai;
+    }
+}
+@mixin flex-wrap ($wrp) {
+  -ms-flex-wrap: $wrp;
+  flex-wrap: $wrp;
+}
 @mixin flex-display($wrp: nowrap, $jc: flex-start, $ai:flex-start) {
   display: -webkit-box;
     display: -ms-flexbox;
       display: flex;
-  -ms-flex-wrap: $wrp;
-    flex-wrap: $wrp;
-  -webkit-box-pack: $jc;
-    -ms-flex-pack: $jc;
-      justify-content: $jc;
-  -webkit-box-align: $ai;
-      -ms-flex-align: $ai;
-          align-items: $ai;
+    @include flex-wrap($wrp);  
+    @include justify-content($jc);
+    @include align-items($ai);
 }
 @mixin font-config ($fw, $fs, $lh, $ls, $clr) {
   font-weight: $fw;

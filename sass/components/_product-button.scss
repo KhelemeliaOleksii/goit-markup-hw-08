@@ -1,6 +1,6 @@
-.button-set-wrapper{
+.button-set-wrapper {
   padding-bottom: 10px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 0;
   }
 }
@@ -8,11 +8,11 @@
   @include flex-display(wrap);
   margin-top: -15px;
   margin-bottom: 10px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     @include flex-display(wrap, center, center);
     margin-bottom: 0;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
   }
 }
@@ -26,43 +26,51 @@
 
 .product-buttom__config {
   cursor: pointer;
-  @include font-config(500, 16px, calc(26 / 16), 0.03em, var(--body-fonts-main-color));
+  @include font-config(
+    500,
+    16px,
+    calc(26 / 16),
+    0.03em,
+    var(--body-fonts-main-color)
+  );
   text-align: center;
   border: 0;
   border-radius: 4px;
   background-color: var(--body-additional-color);
   padding: 6px 22px;
   -webkit-transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-          background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-          -webkit-box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-            background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-            -webkit-box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-      -o-transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-              background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-        transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-                background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-          transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-                  background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-                  box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
-                  -webkit-box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+    background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--active-btn-fonts-color);
     background-color: var(--active-btn-background-color);
-    -webkit-box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
-           0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
-      box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
-             0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
+    @include box-shadow (0px 2px 2px 0 rgba(0, 0, 0, 0.12),
+       0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1))
+    // -webkit-box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
+    //   0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
+    //   0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
   }
 }
 .button--selected {
   color: var(--active-btn-fonts-color);
   background-color: var(--active-btn-background-color);
   -webkit-box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
-         0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
-           0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
+    0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0 rgba(0, 0, 0, 0.8), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
 }

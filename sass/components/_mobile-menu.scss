@@ -37,9 +37,8 @@
   }
 }
 .mobile-menu__wrapper {
-  display: flex;
+  @include flex-display(nowrap, space-between);
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 .mobile-menu__nav-list {
@@ -73,9 +72,8 @@
   color: var(--active-link-fonts-color);
 }
 .mobile-menu__contacts-container {
-  display: flex;
+  @include flex-display (nowrap, space-between);
   flex-direction: column;
-  justify-content: space-between;
 }
 .mobile-menu__contact-item {
   margin-bottom: 32px;
@@ -108,8 +106,7 @@
   }
 }
 .mobile-menu__social-list {
-  display: flex;
-  flex-wrap: wrap;
+  @include flex-display(wrap);
   margin-bottom: -32px;
   margin-right: -20px;
 }

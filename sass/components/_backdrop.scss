@@ -1,19 +1,11 @@
 .backdrop {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-display (nowrap, center, center);
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
   left: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-transition: opacity var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
     visibility var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: opacity var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),

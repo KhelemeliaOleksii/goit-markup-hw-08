@@ -73,9 +73,7 @@
     rgba(33, 150, 243, 0.9)
   );
   @include font-config (400, 18px, 1.33, 0.03em, var(--body-fonts-onbackgraund-color));
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
+  @include transform(translateY(100%));
   -webkit-transition: -webkit-transform var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
     transition: -webkit-transform var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
       -o-transition: transform var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);

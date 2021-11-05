@@ -75,11 +75,20 @@
   letter-spacing: $ls;
   color: $clr;
 }
-@mixin transition($what, $atime, $func) {
-  -webkit-transition: $what $atime $func;
-  -o-transition: $what $atime $func;
-  transition: $what $atime $func;
-}
+@mixin transition($value1, $value2:false, $value3:false, $value4:false, $value5:false) {
+  $params: $value1;
+   @if $value2 
+     { $params: $value1, $value2; }
+     @if $value3 != false
+       { $params: $value1, $value2, $value3; }
+       @if $value4 != false
+         { $params: $value1, $value2, $value3, $value4; }
+         @if $value5 != false
+           { $params: $value1, $value2, $value3, $value4, $value5; }
+  -webkit-transition: $params;
+  -o-transition: $params;
+  transition: $params;
+ }
 @mixin transform($v) {
   -webkit-transform: $v;
   -ms-transform: $v;

@@ -4,7 +4,7 @@ body {
   /* background-color: var(--body-background-main-color); */
 }
 .link {
-  transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1));
 }
 .link-no-tdn {
   text-decoration: none;

@@ -36,9 +36,7 @@
   background-color: transparent;
   width: 100%;
   outline: none;
-  -webkit-transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1));
   &:focus,
   &:hover {
     cursor: pointer;
@@ -55,13 +53,9 @@
   position: absolute;
   left: 12px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  @include transform(translateY(-50%));
   fill: var(--body-fonts-main-color);
-  -webkit-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1));
   .input__geometry:focus + &,
   .input__geometry:hover + & {
     fill: var(--active-link-fonts-color);

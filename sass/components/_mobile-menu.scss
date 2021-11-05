@@ -28,9 +28,7 @@
 .mobile-menu__close-icon {
   width: 100%;
   height: 100%;
-  -webkit-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1));
   .mobile-menu__close-btn:hover &,
   .mobile-menu__close-btn:focus & {
     fill: var(--active-btn-background-color);

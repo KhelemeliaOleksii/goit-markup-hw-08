@@ -13,12 +13,8 @@
   width: 100%;
   border-radius: 50%;
   @include flex-display(nowrap, center, center);
-  -webkit-transition: background-color var(--animation-time)
-    cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: background-color var(--animation-time)
-      cubic-bezier(0.4, 0, 0.2, 1);
-      transition: background-color var(--animation-time)
-        cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition (background-color var(--animation-time)
+  cubic-bezier(0.4, 0, 0.2, 1));
   &:hover,
   &:focus {
     background-color: var(--active-btn-background-color);
@@ -28,9 +24,7 @@
   fill: var(--main-svg-color);
   width: 20px;
   height: 20px;
-  -webkit-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-      transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1));
   .socials__link:hover &,
   .socials__link:focus & {
     fill: var(--body-fonts-onbackgraund-color);

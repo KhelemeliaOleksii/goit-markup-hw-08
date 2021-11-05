@@ -674,9 +674,9 @@ body {
   color: var(--body-fonts-main-color);
   text-align: left;
   vertical-align: top;
-  -webkit-transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: color, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__nav-link:hover, .mobile-menu__nav-link:focus {
@@ -941,9 +941,9 @@ body {
   height: 100%;
   fill: var(--body-fonts-main-color);
   cursor: pointer;
-  -webkit-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: fill, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__icon:hover, .menu__icon:focus {
@@ -1542,9 +1542,9 @@ body {
   border: 1px solid var(--main-svg-color);
   padding-top: 15px;
   padding-bottom: 15px;
-  -webkit-transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: border-color, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regcustomers__link:hover, .regcustomers__link:focus {
@@ -1555,9 +1555,9 @@ body {
   width: 100%;
   height: 100%;
   fill: #afb1b8;
-  -webkit-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: fill, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, var(--animation-time), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regcustomers__link:hover .regcustomers__icon,
